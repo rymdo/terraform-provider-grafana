@@ -125,6 +125,12 @@ func ResourceDataSource() *schema.Resource {
 				Optional: true,
 				Default:  "proxy",
 			},
+
+			"host_instance_id": {
+				Type:     schema.TypeString,
+				Optional: true,
+				ForceNew: true,
+			},
 		},
 	}
 }

@@ -28,6 +28,12 @@ func ResourceFolder() *schema.Resource {
 				Required: true,
 				ForceNew: true,
 			},
+
+			"host_instance_id": {
+				Type:     schema.TypeString,
+				Optional: true,
+				ForceNew: true,
+			},
 		},
 	}
 }

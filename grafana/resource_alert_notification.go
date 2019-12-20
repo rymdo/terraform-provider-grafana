@@ -38,6 +38,12 @@ func ResourceAlertNotification() *schema.Resource {
 				Optional:  true,
 				Sensitive: true,
 			},
+
+			"host_instance_id": {
+				Type:     schema.TypeString,
+				Optional: true,
+				ForceNew: true,
+			},
 		},
 	}
 }

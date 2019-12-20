@@ -82,6 +82,11 @@ func ResourceOrganization() *schema.Resource {
 					Type: schema.TypeString,
 				},
 			},
+			"host_instance_id": {
+				Type:     schema.TypeString,
+				Optional: true,
+				ForceNew: true,
+			},
 		},
 	}
 }
